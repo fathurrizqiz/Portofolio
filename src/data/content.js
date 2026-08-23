@@ -1,14 +1,19 @@
 export const profile = {
   name: "Fathur Rizqi Putra Pratama",
-  title: "Fullstack Web Developer & Certified Associate Data Scientist",
+  title: "Fullstack Web Developer & AI Enginner",
   location: "Kota Tegal, Jawa Tengah",
   phone: "0895384223639",
   email: "ezzdarkrap@gmail.com",
   github: "https://github.com/fathurrizqiz",
-  photo: "/photo.jpeg" // ganti dengan path foto Anda
+  photo: "/photo.jpeg" 
 };
 
-export const about = `Seorang Fullstack Web Developer adaptif dan Certified Associate Data Scientist (BNSP) dengan spesialisasi dalam pembangunan arsitektur web tangguh menggunakan ekosistem Laravel, Vue.js, dan Flask/FastAPI. Berpengalaman nyata dalam menerapkan prinsip SOLID untuk performa tinggi, serta mengintegrasikan model Machine Learning (ANN & CNN) ke dalam aplikasi praktis untuk sektor kesehatan dan pendidikan inklusif.`;
+export const about = `Seorang Fullstack Web Developer adaptif dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Universitas Harkat Negeri (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
+
+Hal yang bisa saya bawa ke dalam tim:
+- Keahlian Teknis: Berpengalaman membangun arsitektur web tangguh dengan Laravel, Vue.js, dan Flask/FastAPI berdasarkan prinsip SOLID.
+- AI Integration: Mampu mengintegrasikan Machine Learning ke dalam web, dibuktikan melalui implementasi IndoBERT untuk Analisis Sentimen pada Sistem Informasi Manajemen Diklat di RS Hermina, serta penerapan ANN & CNN.
+- Karakter & Visi: Seorang problem solver yang kooperatif, berorientasi pada detail (tidak menyepelekan hal kecil), dan selalu lapar akan eksplorasi teknologi baru agar terus relevan dan adaptif di dunia IT.`;
 
 export const skills = {
   "Bahasa Pemrograman": ["PHP", "Python", "JavaScript", "SQL"],
@@ -49,7 +54,7 @@ export const projects = [
     stack: ["Flask", "Python", "CNN", "MongoDB"],
     problem: "Kurangnya kesadaran skrining dini kesehatan mata dan kecenderungan panik saat gejala visual muncul.",
     solution: "Antarmuka web interaktif berbasis CNN untuk mengidentifikasi gangguan medis awal pada mata melalui unggahan citra.",
-    impact: "🏆 Terpilih sebagai Inovasi Resmi Kategori Umum Krenova Tingkat Kota Tegal 2025 oleh Bapperida.",
+    impact: "Terpilih sebagai Inovasi Resmi Kategori Umum Krenova Tingkat Kota Tegal 2025 oleh Bapperida.",
     link: "#"
   }
 ];

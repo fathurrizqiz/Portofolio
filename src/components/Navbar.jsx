@@ -15,8 +15,8 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo">F.RIZQI</div>
-      <div className="time">WIB · {time}</div>
+      <div className="logo">F.RIZQI P.P</div>
+      <div className="time">{time} WIB</div>
     </nav>
   );
 }
