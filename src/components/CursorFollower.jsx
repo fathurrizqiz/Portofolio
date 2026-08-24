@@ -3,28 +3,34 @@ import { useEffect, useState } from 'react';
 export default function CursorFollower() {
   const [pos, setPos] = useState({ x: 0, y: 0 });
   const [hover, setHover] = useState(false);
+  const [enabled, setEnabled] = useState(
+    typeof window !== 'undefined' ? window.innerWidth > 768 : false
+  );
 
   useEffect(() => {
-    if (window.innerWidth <= 768) return;
-    
+    const checkSize = () => setEnabled(window.innerWidth > 768);
+    checkSize();
+    window.addEventListener('resize', checkSize);
+    return () => window.removeEventListener('resize', checkSize);
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
+
     const move = (e) => setPos({ x: e.clientX, y: e.clientY });
     const over = (e) => {
-      if (e.target.closest('a, button, .project, .skill-card, .stair-step, .cert-item')) {
-        setHover(true);
-      } else {
-        setHover(false);
-      }
+      setHover(!!e.target.closest('a, button, .project, .skill-card, .stair-step, .cert-item'));
     };
-    
+
     window.addEventListener('mousemove', move);
     window.addEventListener('mouseover', over);
     return () => {
       window.removeEventListener('mousemove', move);
       window.removeEventListener('mouseover', over);
     };
-  }, []);
+  }, [enabled]);
 
-  if (window.innerWidth <= 768) return null;
+  if (!enabled) return null;
 
   return (
     <>

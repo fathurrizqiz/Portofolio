@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { profile } from '../data/content';
+import { cv } from '../data/content';
 
 export default function Hero() {
   const nameWords = profile.name.split(' ');
@@ -43,7 +44,14 @@ export default function Hero() {
       >
         <span>{profile.location}</span>
         <span>{profile.title}</span>
-        <span>Tersedia untuk kolaborasi</span>
+        <div>
+          <a href={cv.link} target="_blank" rel="noopener" className="project-link">
+                    CV
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H8M17 7V16"/>
+                    </svg>
+                  </a>
+        </div>
       </motion.div>
 
       <motion.div

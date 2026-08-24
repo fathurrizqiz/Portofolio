@@ -1,6 +1,6 @@
 export const profile = {
   name: "Fathur Rizqi Putra Pratama",
-  title: "Fullstack Web Developer & AI Enginner",
+  title: "Fullstack Web Developer & AI Engineer", // FIXED: "Enginner" → "Engineer"
   location: "Kota Tegal, Jawa Tengah",
   phone: "0895384223639",
   email: "ezzdarkrap@gmail.com",
@@ -8,7 +8,14 @@ export const profile = {
   photo: "/photo.jpeg" 
 };
 
-export const about = `Seorang Fullstack Web Developer adaptif dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Universitas Harkat Negeri (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
+export const cv = {
+  link: "https://drive.google.com/file/d/1FKrCKt7DnwFT5mjI5pcpAzz35xNvulc-/view?usp=sharing"
+};
+
+// ⚠️ PERHATIAN: kalimat di bawah menyebut "Universitas Harkat Negeri",
+// tapi data `education.school` menyebut "Politeknik Harapan Bersama Tegal".
+// Saya samakan ke Politeknik Harapan Bersama Tegal — ganti balik kalau ini yang salah.
+export const about = `Seorang Fullstack Web Developer adaptif dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Politeknik Harapan Bersama Tegal (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
 
 Hal yang bisa saya bawa ke dalam tim:
 - Keahlian Teknis: Berpengalaman membangun arsitektur web tangguh dengan Laravel, Vue.js, dan Flask/FastAPI berdasarkan prinsip SOLID.
@@ -33,7 +40,8 @@ export const projects = [
     problem: "Sistem pengelolaan diklat masih manual, rawan kesalahan data, dan lambat dalam penyusunan laporan.",
     solution: "Merancang platform web terintegrasi berskala enterprise untuk mendokumentasikan serta mengotomatisasi seluruh alur manajemen diklat.",
     impact: "Transformasi digital menghasilkan penyimpanan data terstruktur, transparansi tinggi, dan laporan analitik real-time.",
-    link: "https://github.com/fathurrizqiz/System_Information_Training.git"
+    link: "https://github.com/fathurrizqiz/System_Information_Training.git",
+    web: "eichar-diklat.my.id"
   },
   {
     name: "SLB Tunawicara",
@@ -55,7 +63,7 @@ export const projects = [
     problem: "Kurangnya kesadaran skrining dini kesehatan mata dan kecenderungan panik saat gejala visual muncul.",
     solution: "Antarmuka web interaktif berbasis CNN untuk mengidentifikasi gangguan medis awal pada mata melalui unggahan citra.",
     impact: "Terpilih sebagai Inovasi Resmi Kategori Umum Krenova Tingkat Kota Tegal 2025 oleh Bapperida.",
-    link: "#"
+    link: "https://github.com/fathurrizqiz/Eye_Healthv2.git"
   }
 ];
 

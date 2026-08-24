@@ -45,6 +45,7 @@ export default function Projects() {
                   <p>{project.impact}</p>
                 </div>
               </div>
+              <div className="flex gap-4 mt-4">
               {project.link !== '#' && (
                 <a href={project.link} target="_blank" rel="noopener" className="project-link">
                   Lihat Repository
@@ -52,7 +53,17 @@ export default function Projects() {
                     <path d="M7 17L17 7M17 7H8M17 7V16"/>
                   </svg>
                 </a>
+                
               )}
+              {project.web && (
+                  <a href={`https://${project.web}`} target="_blank" rel="noopener" className="project-link">
+                    Lihat Website
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <path d="M7 17L17 7M17 7H8M17 7V16"/>
+                    </svg>
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}

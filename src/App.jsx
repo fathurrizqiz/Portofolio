@@ -7,8 +7,10 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
+import Documentation from './components/Documentation'; // ← Tambahkan ini
 import Contact from './components/Contact';
 import CursorFollower from './components/CursorFollower';
+import ScrollProgress from './components/ScrollProgress';
 
 export default function App() {
   useEffect(() => {
@@ -28,6 +30,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollProgress />
       <CursorFollower />
       <Navbar />
       <Hero />
@@ -36,6 +39,7 @@ export default function App() {
       <Projects />
       <Experience />
       <Education />
+      <Documentation /> {/* ← Tambahkan ini */}
       <Contact />
       <footer className="footer">
         <div>© {new Date().getFullYear()} Fathur Rizqi</div>
