@@ -60,7 +60,7 @@ export default function Hero() {
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
       >
-        SCROLL ↓
+        SCROLL KEBAWAH
       </motion.div>
     </section>
   );

@@ -43,7 +43,7 @@ export default function App() {
       <Contact />
       <footer className="footer">
         <div>© {new Date().getFullYear()} Fathur Rizqi</div>
-        <div>Designed & Built with ♥ in Tegal</div>
+        <div>Vampire Tiktok</div>
       </footer>
     </>
   );

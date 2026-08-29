@@ -3,49 +3,67 @@ import { useState } from 'react';
 const documents = [
   {
     id: 1,
-    category: 'Pengalaman',
+    category: 'pengalaman',
     title: 'Web Developer Intern di RS Hermina Daan Mogot',
-    date: '2025-07-20',
+    date: '2025-06-20',
     description: 'Melakukan magang sebagai web developer di rumah sakit Hermina Daan Mogot, mengembangkan aplikasi web untuk meningkatkan efisiensi operasional.',
-    image: '/images/magang/web-developer-intern.jpg',
+    image: '/public/magang.jpeg',
     certificate: '/certificates/web-developer-intern.pdf'
   },
   {
     id: 2,
-    category: 'Pengalaman',
+    category: 'prestasi',
     title: 'Kompetensi Assosiate Data Scientist BNSP',
-    date: '2024-05-20',
+    date: '2025-07-20',
     description: 'Mendapatkan sertifikasi kompetensi Associate Data Scientist dari BNSP, membuktikan kemampuan dalam analisis data dan penerapan machine learning.',
-    image: '/images/kegiatan/workshop-react.jpg',
+    image: '/public/BNSP.jpeg',
     certificate: '/certificates/workshop-react.pdf'
   },
   {
     id: 3,
-    category: 'prestasi',
-    title: 'Best Project Hackathon 2024',
-    date: '2024-07-10',
-    description: 'Memenangkan kategori Best Project dalam hackathon nasional dengan aplikasi manajemen tugas berbasis AI.',
-    image: '/images/prestasi/hackathon.jpg',
+    category: 'pengalaman',
+    title: 'Eichar - SIM Diklat Berbasis AI',
+    date: '2026-03-15',
+    description: 'Mengembangkan sistem informasi manajemen diklat dengan analisis sentimen menggunakan IndoBERT.',
+    image: '/public/HRD.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
   {
     id: 4,
-    category: 'kegiatan',
-    title: 'Seminar UI/UX Design',
-    date: '2024-08-05',
-    description: 'Berpartisipasi dalam seminar internasional tentang tren terbaru dalam desain antarmuka pengguna.',
-    image: '/images/kegiatan/seminar-uiux.jpg',
-    certificate: '/certificates/seminar-uiux.pdf'
+    category: 'pengalaman',
+    title: 'Eye Health - berbasis CNN',
+    date: '2024-03-15',
+    description: 'Membangun sebuah aplikasi deteksi kesehatan mata dengan algoritma CNN',
+    image: '/public/Eye Health.jpeg',
+    certificate: '/certificates/best-project.pdf'
   },
   {
     id: 5,
-    category: 'prestasi',
-    title: 'Sertifikasi Frontend Developer',
-    date: '2024-09-12',
-    description: 'Lulus sertifikasi profesional Frontend Developer dengan nilai memuaskan dari lembaga bersertifikat.',
-    image: '/images/prestasi/sertifikasi.jpg',
-    certificate: '/certificates/frontend-cert.pdf'
-  }
+    category: 'pengalaman',
+    title: 'Improvisasi Eye Health - berbasis CNN kepada lingkungan',
+    date: '2024-03-15',
+    description: 'Menjelaskan keunggulan serta tahapan - tahapan terkait penggunaan sistem Eye Health',
+    image: '/public/diskusi.jpeg',
+    certificate: '/certificates/best-project.pdf'
+  },
+  {
+    id: 6,
+    category: 'pengalaman',
+    title: 'Kunjungan Industri di JSC ( Jakarta Smart City )',
+    date: '2024-07-15',
+    description: 'Kunjungan industri ke sebuah perusahaan yang terletak di jakarta pusat, kunjungan ini untuk mempelajari bagaimana teknologi dapat membantu dalam kebutuhan sehari - hari',
+    image: '/public/KI.jpeg',
+    certificate: '/certificates/best-project.pdf'
+  },
+  {
+    id: 7,
+    category: 'pengalaman',
+    title: 'Kunjungan Industri di BSSN ( Badan Cyber dan Sandi Negara )',
+    date: '2024-07-15',
+    description: 'Kunjungan industri ke sebuah perusahaan yang terletak di jakarta selatan, kunjungan ini untuk mempelajari bagaimana menjaga keamanan dalam sebuah sistem dari cyber',
+    image: '/public/badan cyber.jpeg',
+    certificate: '/certificates/best-project.pdf'
+  },
 ];
 
 export default function Documentation() {
@@ -58,8 +76,8 @@ export default function Documentation() {
 
   const categories = [
     { value: 'semua', label: 'Semua' },
-    { value: 'kegiatan', label: 'Kegiatan' },
-    { value: 'magang', label: 'Prestasi' }
+    { value: 'pengalaman', label: 'pengalaman' },
+    { value: 'prestasi', label: 'prestasi' }
   ];
 
   return (
@@ -92,7 +110,7 @@ export default function Documentation() {
               <div className="doc-image">
                 <img src={doc.image} alt={doc.title} />
                 <span className={`doc-badge ${doc.category}`}>
-                  {doc.category === 'Kegiatan' ? 'Kegiatan' : 'Pengalaman'}
+                  {doc.category === 'pengalaman' ? 'pengalaman' : 'prestasi'}
                 </span>
               </div>
               <div className="doc-content">
