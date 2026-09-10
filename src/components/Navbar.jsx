@@ -59,7 +59,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="logo">F.RIZQI P.P</div>
 
-      <div className="nav-links desktop-only">
+      <div className="nav-links desktop-only ">
         {sections.map((s) => {
           const isActive = active === s.id;
           return (
@@ -85,11 +85,12 @@ export default function Navbar() {
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Buka menu navigasi"
       >
-        {menuOpen ? '✕' : '☰'}
+        {menuOpen ? 'FA' : '☰'}
       </button>
 
       {menuOpen && (
         <div className="nav-mobile-menu">
+          
           {sections.map((s) => {
             const isActive = active === s.id;
             return (

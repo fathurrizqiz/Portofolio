@@ -24,6 +24,7 @@ export default function Education() {
         <div>
           <div style={{ fontSize: '1.2rem', fontWeight: 500 }}>{education.degree}</div>
           <div style={{ color: 'var(--text-dim)', marginTop: '0.3rem' }}>IPK: {education.gpa}</div>
+          <div style={{ color: 'var(--text-dim)', marginTop: '0.3rem' }}>Skripsi: {education.skripsi}</div>
           <div style={{ marginTop: '1.5rem' }}>
             <div style={{ fontSize: '0.75rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: '0.8rem' }}>Fokus Pembelajaran</div>
             <div style={{ display: 'flex', gap: '0.8rem', flexWrap: 'wrap' }}>

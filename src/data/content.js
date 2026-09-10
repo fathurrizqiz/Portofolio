@@ -8,6 +8,11 @@ export const profile = {
   photo: "/photo.jpeg" 
 };
 
+export const hero = {
+  photo : "/profile.png",
+  name: "Fathur Rizqi Putra Pratama",
+}
+
 export const cv = {
   link: "https://drive.google.com/file/d/1FKrCKt7DnwFT5mjI5pcpAzz35xNvulc-/view?usp=sharing"
 };
@@ -15,7 +20,7 @@ export const cv = {
 // ⚠️ PERHATIAN: kalimat di bawah menyebut "Universitas Harkat Negeri",
 // tapi data `education.school` menyebut "Politeknik Harapan Bersama Tegal".
 // Saya samakan ke Politeknik Harapan Bersama Tegal — ganti balik kalau ini yang salah.
-export const about = `Seorang Fullstack Web Developer adaptif dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Politeknik Harapan Bersama Tegal (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
+export const about = `Seorang Fullstack Web Developer dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Politeknik Harapan Bersama Tegal (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
 
 Hal yang bisa saya bawa ke dalam tim:
 - Keahlian Teknis: Berpengalaman membangun arsitektur web tangguh dengan Laravel, Vue.js, dan Flask/FastAPI berdasarkan prinsip SOLID.
@@ -81,10 +86,11 @@ export const experience = [
 ];
 
 export const education = {
-  school: "Politeknik Harapan Bersama Tegal",
+  school: "Universitas Harkat Negeri",
   degree: "D4 Sarjana Terapan Teknik Informatika",
-  gpa: "3.70 / 4.00 (Sangat Memuaskan)",
+  gpa: "3.72 / 4.00 (Sangat Memuaskan)",
   status: "Fresh Graduate",
+  skripsi: "Sistem Informasi Manajemen Diklat Berbasis Web dengan Integrasi Analisis Sentimen Menggunakan IndoBERT pada Rumah Sakit Hermina Daan Mogot Jakarta Barat",
   focus: ["Pemrograman Web Lanjut", "Rekayasa Perangkat Lunak", "Kecerdasan Buatan (Deep Learning)"]
 };
 

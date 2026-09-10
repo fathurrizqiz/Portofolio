@@ -749,3 +749,220 @@ section {
     padding: 20px;
   }
 }
+
+/* ========== HERO LAYOUT 2 KOLOM ========== */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 80px 5vw 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* KOLOM KIRI */
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-name {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--muted, #666);
+  max-width: 45ch;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  font-size: 0.875rem;
+  color: var(--muted, #666);
+}
+
+.hero-meta .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent, #000);
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 1px solid currentColor;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+.hero-meta .project-link:hover {
+  background: currentColor;
+  color: var(--bg, #fff);
+}
+
+.hero-scroll {
+  margin-top: 40px;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--muted, #666);
+}
+
+/* KOLOM KANAN — FOTO */
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-photo-wrapper {
+  position: relative;
+  width: 70%;
+  max-width: 400px;
+  aspect-ratio: 3 / 4;
+}
+
+.hero-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 4px;
+  filter: grayscale(0.2) contrast(1.05);
+  position: relative;
+  z-index: 2;
+}
+
+/* Dekorasi aksen — garis/frame di belakang foto */
+.photo-accent {
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  bottom: -20px;
+  left: 20px;
+  border: 2px solid var(--accent, #ff5c1f);
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+    gap: 40px;
+  }
+  .hero-right {
+    justify-content: center;
+    order: -1; /* foto pindah ke atas di mobile */
+  }
+  .hero-photo-wrapper {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: 2.5rem;
+  }
+  .photo-accent {
+    display: none; /* sembunyikan dekorasi di layar kecil */
+  }
+}
+
+.skills-section {
+  padding: 90px 0 70px;
+  overflow: hidden;
+}
+
+.skills-header {
+  max-width: 1100px;
+  margin: 0 auto 44px;
+  padding: 0 24px;
+}
+
+.skills-kicker {
+  font-family: monospace;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  color: var(--accent, #ff5c1f);
+}
+
+.skills-title {
+  margin-top: 10px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+}
+
+.marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.marquee-row {
+  overflow: hidden;
+  padding: 6px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 36s linear infinite;
+}
+
+.marquee-row.is-reverse .marquee-track {
+  animation-direction: reverse;
+}
+
+.marquee-row:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.skill-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 16px;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  font-size: 15px;
+  white-space: nowrap;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.skill-chip:hover {
+  border-color: var(--accent, #ff5c1f);
+  transform: translateY(-3px);
+}
+
+.skill-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+@keyframes marquee-scroll {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
