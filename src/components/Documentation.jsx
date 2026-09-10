@@ -7,7 +7,7 @@ const documents = [
     title: 'Web Developer Intern di RS Hermina Daan Mogot',
     date: '2025-06-20',
     description: 'Melakukan magang sebagai web developer di rumah sakit Hermina Daan Mogot, mengembangkan aplikasi web untuk meningkatkan efisiensi operasional.',
-    image: '/public/magang.jpeg',
+    image: '/magang.jpeg',
     certificate: '/certificates/web-developer-intern.pdf'
   },
   {
@@ -16,7 +16,7 @@ const documents = [
     title: 'Kompetensi Assosiate Data Scientist BNSP',
     date: '2025-07-20',
     description: 'Mendapatkan sertifikasi kompetensi Associate Data Scientist dari BNSP, membuktikan kemampuan dalam analisis data dan penerapan machine learning.',
-    image: '/public/BNSP.jpeg',
+    image: '/BNSP.jpeg',
     certificate: '/certificates/workshop-react.pdf'
   },
   {
@@ -25,7 +25,7 @@ const documents = [
     title: 'Eichar - SIM Diklat Berbasis AI',
     date: '2026-03-15',
     description: 'Mengembangkan sistem informasi manajemen diklat dengan analisis sentimen menggunakan IndoBERT.',
-    image: '/public/HRD.jpeg',
+    image: '/HRD.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
   {
@@ -34,7 +34,7 @@ const documents = [
     title: 'Eye Health - berbasis CNN',
     date: '2024-03-15',
     description: 'Membangun sebuah aplikasi deteksi kesehatan mata dengan algoritma CNN',
-    image: '/public/Eye Health.jpeg',
+    image: '/Eye Health.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
   {
@@ -43,7 +43,7 @@ const documents = [
     title: 'Improvisasi Eye Health - berbasis CNN kepada lingkungan',
     date: '2024-03-15',
     description: 'Menjelaskan keunggulan serta tahapan - tahapan terkait penggunaan sistem Eye Health',
-    image: '/public/diskusi.jpeg',
+    image: '/diskusi.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
   {
@@ -52,7 +52,7 @@ const documents = [
     title: 'Kunjungan Industri di JSC ( Jakarta Smart City )',
     date: '2024-07-15',
     description: 'Kunjungan industri ke sebuah perusahaan yang terletak di jakarta pusat, kunjungan ini untuk mempelajari bagaimana teknologi dapat membantu dalam kebutuhan sehari - hari',
-    image: '/public/KI.jpeg',
+    image: '/KI.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
   {
@@ -61,7 +61,7 @@ const documents = [
     title: 'Kunjungan Industri di BSSN ( Badan Cyber dan Sandi Negara )',
     date: '2024-07-15',
     description: 'Kunjungan industri ke sebuah perusahaan yang terletak di jakarta selatan, kunjungan ini untuk mempelajari bagaimana menjaga keamanan dalam sebuah sistem dari cyber',
-    image: '/public/badan cyber.jpeg',
+    image: '/badan cyber.jpeg',
     certificate: '/certificates/best-project.pdf'
   },
 ];
