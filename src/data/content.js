@@ -14,7 +14,7 @@ export const hero = {
 }
 
 export const cv = {
-  link: "https://drive.google.com/file/d/1FKrCKt7DnwFT5mjI5pcpAzz35xNvulc-/view?usp=sharing"
+  link: "https://drive.google.com/file/d/1FZNOASZAKHZN44msF1HptB4eUYj7proS/view?usp=sharing"
 };
 
 
@@ -44,7 +44,7 @@ export const projects = [
     solution: "Merancang platform web terintegrasi berskala enterprise untuk mendokumentasikan serta mengotomatisasi seluruh alur manajemen diklat.",
     impact: "Transformasi digital menghasilkan penyimpanan data terstruktur, transparansi tinggi, dan laporan analitik real-time.",
     link: "https://github.com/fathurrizqiz/System_Information_Training.git",
-    web: "eichar-diklat.my.id"
+    web: "eichar.my.id"
   },
   {
     name: "SLB Tunawicara",
