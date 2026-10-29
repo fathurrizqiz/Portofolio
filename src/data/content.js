@@ -9,7 +9,7 @@ export const profile = {
 };
 
 export const hero = {
-  photo : "/profile.png",
+  photo : "/profile.jpeg",
   name: "Fathur Rizqi Putra Pratama",
 }
 
@@ -17,9 +17,7 @@ export const cv = {
   link: "https://drive.google.com/file/d/1FKrCKt7DnwFT5mjI5pcpAzz35xNvulc-/view?usp=sharing"
 };
 
-// ⚠️ PERHATIAN: kalimat di bawah menyebut "Universitas Harkat Negeri",
-// tapi data `education.school` menyebut "Politeknik Harapan Bersama Tegal".
-// Saya samakan ke Politeknik Harapan Bersama Tegal — ganti balik kalau ini yang salah.
+
 export const about = `Seorang Fullstack Web Developer dan Certified Associate Data Scientist (BNSP) lulusan D4 Teknik Informatika Politeknik Harapan Bersama Tegal (2026). Saya memadukan keahlian rekayasa perangkat lunak dan kecerdasan buatan untuk membangun solusi digital yang relevan dengan kebutuhan industri saat ini.
 
 Hal yang bisa saya bawa ke dalam tim:
@@ -51,7 +49,7 @@ export const projects = [
   {
     name: "SLB Tunawicara",
     subtitle: "Aplikasi Pembelajaran Mandiri Siswa",
-    year: "2025",
+    year: "2024",
     role: "Backend Developer & ML Engineer",
     stack: ["Flask", "Python", "ANN", "PostgreSQL"],
     problem: "Terbatasnya sarana pendidikan mandiri yang ramah akses bagi siswa tunawicara di luar sekolah.",
@@ -62,7 +60,7 @@ export const projects = [
   {
     name: "Eye Health",
     subtitle: "Deteksi Dini Penyakit Mata",
-    year: "2025",
+    year: "2024",
     role: "Web Developer & AI Researcher",
     stack: ["Flask", "Python", "CNN", "MongoDB"],
     problem: "Kurangnya kesadaran skrining dini kesehatan mata dan kecenderungan panik saat gejala visual muncul.",
